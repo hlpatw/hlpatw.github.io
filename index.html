@@ -8,7 +8,7 @@
 <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#20212b" media="(prefers-color-scheme: dark)">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-<link rel="stylesheet" href="styles.css?v=3">
+<link rel="stylesheet" href="styles.css?v=5">
 </head>
 <body>
 <div class="wrapper">
@@ -92,12 +92,13 @@
 
         <button type="submit" class="btn">Send feedback</button>
         <p id="form-status" class="status" role="status" aria-live="polite"></p>
+        <p class="alt">Prefer email? <a id="fallback-email" href="#">Write to me directly</a>.</p>
       </form>
+    </section>
 
-      <div id="form-fallback" class="fallback" hidden>
-        <p>If you'd prefer to write directly, please feel free — I read every message and will do my best to get back to you.</p>
-        <p><a class="btn" id="fallback-email" href="#">Email me</a></p>
-      </div>
+    <section class="block" aria-labelledby="cite-h">
+      <h2 id="cite-h">Citation</h2>
+      <p class="cite">Li, K.-X. (2026). <em>Mapping morphosyntactic structure to event representations: Mandarin-speaking toddlers use numeral-classifier distributions to compute event culmination.</em> Talk presented at BUCLD 51, Boston, MA.</p>
     </section>
 
     <footer class="foot">
@@ -106,6 +107,6 @@
 
   </main>
 </div>
-<script src="script.js?v=3"></script>
+<script src="script.js?v=5"></script>
 </body>
 </html>
