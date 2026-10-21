@@ -74,6 +74,7 @@ copyBtn.addEventListener("click", async () => {
 
 if (!FORMSPREE_ID) {
   form.hidden = true;
+  document.getElementById("feedback-lede").hidden = true;
   fallback.hidden = false;
 } else {
   form.action = "https://formspree.io/f/" + FORMSPREE_ID;
