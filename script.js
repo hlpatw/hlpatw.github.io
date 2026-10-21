@@ -23,7 +23,7 @@ const submitBtn = form.querySelector('button[type="submit"]');
 document.querySelectorAll("[data-optional]").forEach((el) => {
   const link = el.matches("a") ? el : el.querySelector("a");
   if (!link || !link.getAttribute("href")) {
-    el.hidden = true;
+    (el.closest("li") || el).hidden = true;
   } else if (!link.textContent.trim()) {
     try {
       const url = new URL(link.href);
@@ -36,7 +36,7 @@ document.querySelectorAll("[data-optional]").forEach((el) => {
 
 // Hide the "coming soon" note once the talk's own materials are live.
 const hasMaterial = [...document.querySelectorAll(".links .pill[data-material]")]
-  .some((a) => !a.hidden && a.getAttribute("href"));
+  .some((a) => !(a.closest("li") || a).hidden && a.getAttribute("href"));
 if (hasMaterial) {
   document.getElementById("materials-note").hidden = true;
 }

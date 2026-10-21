@@ -47,6 +47,8 @@ git push
 
 Pages rebuilds automatically in about a minute.
 
+**When you edit `styles.css` or `script.js`, bump the `?v=` number on their `<link>` / `<script>` tags in `index.html`.** GitHub Pages caches assets for several minutes, and without a new version string visitors (including you) can get the old stylesheet against the new HTML — the page then looks half-broken.
+
 ## Notes
 
 - No analytics, no cookies, no external fonts or CDNs — the page opens fast from both the US and China.
