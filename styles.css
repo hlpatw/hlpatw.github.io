@@ -94,8 +94,8 @@ a:hover { color: var(--link-hover); text-decoration: underline; }
   height: 100%;
   object-fit: cover;
   object-position: center 25%;
-  transform: scale(1.6);
-  transform-origin: 95% 25%;
+  transform: scale(1.35);
+  transform-origin: 100% 25%;
 }
 
 .sidebar h1 {
