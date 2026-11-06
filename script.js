@@ -8,8 +8,8 @@
 const FORMSPREE_ID = "mnpjeykp";
 
 // Email is assembled at runtime so the full address never appears in the HTML.
-const EMAIL_USER = "1215932753";
-const EMAIL_DOMAIN = "qq.com";
+const EMAIL_USER = "kexuan-l24";
+const EMAIL_DOMAIN = "mails.tsinghua.edu.cn";
 const EMAIL = EMAIL_USER + "@" + EMAIL_DOMAIN;
 
 const form = document.getElementById("feedback-form");
